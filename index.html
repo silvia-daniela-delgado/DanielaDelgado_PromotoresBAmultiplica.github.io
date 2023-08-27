@@ -1,0 +1,243 @@
+<!-- Esta declaracion define el tipo de documento HTML que se esta utilizando, en este caso HTML5. -->
+<!DOCTYPE html> 
+
+<!-- Se utiliza para crear y abrir el elemento raiz del documento HTML y especifica el idioma
+    del contenido como español (puede variar el idioma de acuerdo a la necesidad), encierra todo el contenido 
+    de la pagina web y define el comienzo del documento HTML y su estructura basica-->
+<html lang="es">
+
+    <!--Se utiliza para contener informacion que no es visible directamente en la pagina web, pero que es 
+        esencial para el fincionamiento y presentacion adecuada del contenido, aloja metadatos que brindan 
+        informacion contextual y configuracion para el documento HTML-->
+    <head>
+
+        <!-- Define la codificacion de caracteres para el documento, en este caso UTF-8 se utiliza para 
+            admitir caracteres de diferentes idiomas. -->
+        <meta charset="UTF-8">
+
+        <!-- Define el tamaño de la ventana grafica que deberia tener el dispositivo para que el contenido 
+            se muestre correctamente en dispositivos moviles -->    
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Establece el titulo de la pagina que se muestra en la pestaña del navegador -->
+        <title>Reaper Squad Gaming</title>
+
+        <!-- <link> Enlaza el archivo de estilo CSS externo al documento HTML para aplicar estilos a la pagina
+            rel: Este atributo indica la relación entre el documento actual y el recurso enlazado. -->
+        <link rel="stylesheet" href="Css/style.css">
+
+        <!-- href: Este atributo especifica la URL del recurso externo que se va a enlazar. En este caso, la
+            URL apunta a la fuente de Google Fonts "Montserrat" con los estilos y pesos de fuente específicos. -->    
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Cierre de etiqueta <head> -->    
+    </head>
+
+    <!-- <body> Delimita el área visible y principal de una página web y contiene todos los elementos que los usuarios
+        pueden ver y con los que pueden interactuar en el navegador. Es donde se encuentra la mayor parte del 
+        contenido y la funcionalidad de una página web. -->
+    <body>
+
+        <!-- <header> Define la seccion encabezado y proporciona una estructura organizada para el contenido que 
+            se encuentra en la parte superior de una página web.  -->
+        <header>
+
+            <!-- <nav> Agrupa de manera semántica para los enlaces y elementos de navegación que ayudan a los usuarios 
+                a moverse dentro del sitio web-->
+            <nav>
+
+                <!-- <ul> Se utiliza para crear una "Lista no ordenada". Agrupa los elementos de lista que no siguen 
+                    un orden específico y se presentan con viñetas o puntos como marcadores. -->
+                <ul>
+
+                    <!-- <li>: Se utiliza para definir un elemento dentro de una lista. En este caso, está siendo 
+                        utilizada para crear un elemento de lista enlazado. <a> Representa un enlace o hipervínculo 
+                            en HTML. El atributo href especifica la dirección del enlace, en este caso, "index.html",
+                            que es la página de inicio -->
+                    <li><a href="index.html">Bienvenidos</a></li>
+                <!-- Cierre etiqueta <ul> -->    
+                </ul>
+            <!-- Cierre etiqueta <nav> -->    
+            </nav>
+        <!-- Cierre etiqueta <header> -->    
+        </header>
+
+        <!-- <section> Define una sección de contenido dentro de la pagina. Agrupa y estructura el contenido relacionado.
+            El atributo id asigna un identificador único a la sección. En este caso, el identificador es "home". Los 
+            identificadores son utilizados por JavaScript y CSS para seleccionar elementos específicos y aplicar estilos 
+            o funcionalidades a ellos -->
+        <section id="home">
+
+            <!-- <div> Crea un contenedor genérico o de bloque. No tiene un significado semántico específico, se usa para
+                agrupar y estructurar contenido relacionado, aplicar estilos o funcionalidades a través de CSS y JavaScript. 
+                El atributo class se utiliza para asignar una o varias clases a un elemento HTML.-->
+            <div class="caja">
+
+                <!-- </h1> se utiliza para crear un encabezado de nivel 1, que es el encabezado más grande y de mayor jerarquía.
+                    Suele utilizarse para títulos principales y elementos de contenido destacados.. y junto con la clase 
+                    poder aplicar estilos utilizando CSS -->
+                <h1 class="titulo-principal">Reaper Squad Gaming</h1>
+
+                <!-- <img> Inserta una imágen en la pagina. El atributo src especifica la ruta de la imagen.  -->
+                <h1><img src="Imagenes/6-logo-color.png"></h1>
+            <!-- Cierre etiqueta <div> -->    
+            </div>
+        <!-- Cierre etiqueta <section> -->
+        </section>
+
+        <!-- <main> Define la seccion central y principal del contenido, proporcionando una estructura semantica identificando la 
+            porcion principal de todo el contenido. Esto facilita la identificacion del contenido principal en el codigo
+            a los desarrolladores y a los motores de busqueda -->
+        <main>
+
+            <!-- En esta seccion estoy agrupando el contenido que detalla la descripcion de la pagina,
+                asignando el atributo class para poder asignarle estilos desde CSS. -->
+            <section class="principal">
+
+                <!-- <h2> Crea un encabezado de nivel 2, que es un nivel jerárquico menor que el encabezado de nivel 1 <h1>. -->
+                <h2 class="titulo2">¿Quienes somos?</h2>
+                
+                <!-- Con <img> inserto una imagen y le asigno el atributo class para aplicar estilos desde CSS. -->|
+                <img class="Gaming" src="Imagenes/1-logo-blanco.png" alt="Nosotros">
+                
+                <!--  Con la etiqueta <p> creo un parrafo de texto, utilizando esta etiqueta le estoy indicando al navegador 
+                    que inicie el parrafo. Y con la etiqueta <strong> estoy enfatizando la seccion del parrafo que se encuentra
+                    dentro de la etiqueta.  -->
+                <p>** En <strong>Reaper Squad Gaming</strong>, somos un equipo apasionado por los videojuegos y la competición en línea.
+                Sumérgete en un mundo de emoción, estrategia y camaradería mientras exploras los diversos universos de 
+                los juegos más populares. Nuestra misión es unir a jugadores de todas partes y brindarles un espacio donde
+                puedan perfeccionar sus habilidades, forjar amistades duraderas y enfrentarse a desafíos épicos. **</p>
+    
+            <!-- Cierre de la seccion de descripcion "principal" -->
+            </section> 
+
+            <!-- En esta seccion estoy agrupando el contenido que detalla lo que ofrece la pagina,
+                asignando el atributo class para poder asignarle estilos desde CSS. -->
+            <section class="ofrecimiento">
+
+                <!-- Con <h3> creo un encabezado de nivel de jerarquia 3. Asignando el atributo class para aplicar estilo desde CSS-->
+                <h3 class="titulo3">¿Qué ofrecemos?</h3>
+
+                <!-- Acontinuacion utilizo etiquetas descriptas con aterioridad como <p></p> <strong></strong>
+                    pero agrego la etiqueta <br> la cual no necesita un cierre como otras etiquetas que venimos utilizando
+                    y su funcion es crear un salto de linea en el parrafo. podemos aplicarla donde creamos correspondiente
+                    para que nuestro parrafo quede como queremos que se visualice en la pagina -->
+                <p><strong>1. Diversidad de Juegos:</strong> En Reaper Squad Gaming, nos apasionan una variedad de géneros de videojuegos.<br> 
+                    Ya sea que te encanten los juegos de disparos en primera persona, los MOBAs estratégicos o los RPGs inmersivos,<br> tenemos 
+                    un lugar para ti en nuestra comunidad.</p>
+                <p><strong>2. Equipo Competitivo:</strong> Si tienes el deseo de llevar tus habilidades al siguiente nivel, nuestro equipo 
+                competitivo<br>es el camino a seguir. Participamos en torneos en línea y presenciales, y ofrecemos entrenamiento especializado <br>
+                para ayudarte a mejorar y destacar en la escena competitiva.</p>
+                <p><strong>3. Entrenamiento y Guías:</strong> Entendemos que todos estamos en diferentes etapas de nuestro viaje en los videojuegos. <br>
+                Es por eso que ofrecemos recursos de entrenamiento, guías y consejos para jugadores novatos y experimentados por igual.</p>
+                <p><strong>4. Comunidad Activa:</strong> Ser parte de Reaper Squad Gaming no es solo sobre jugar juntos, sino también sobre forjar <br>
+                amistades duraderas. Participa en nuestros eventos comunitarios, charlas en línea y chats de voz mientras compartimos <br>experiencias y risas.</p>
+            
+            <!-- Cierre de la seccion de lo que ofrece la pagina -->
+            </section>
+    
+            <!-- En esta seccion agrupo el contenido que representa el porque el usuario debe ser parte utilizando tambien el atributo class antes mencionado. -->
+            <section class="unirte">
+
+                <!-- Aqui estoy creando otro encabezado pero de jerarquia de nivel 4, utlizando el atributo clase clase para aplicar el estilo deseado -->
+                <h4 class="titulo4">¿Por qué unirte a nosotros?</h4>
+
+                <!-- Indico al navegador con la etiqueta <p> el inicio de un nuevo parrafo junto con <strong> enfatizando el contenido deseado y generando los 
+                    saltos de linea con <br>-->
+                <p><strong>Reaper Squad Gaming</strong> se trata de unir fuerzas con jugadores apasionados que comparten tus intereses. No importa 
+                si eres un jugador casual o <br>competitivo, encontrarás un lugar donde encajarás y podrás disfrutar de una experiencia de juego enriquecedora.
+                <br>Nuestra comunidad está basada en el respeto, la diversión y el deseo constante de mejorar.</p>
+                <p>¿Estás listo para unirte a la acción? ¡Únete a Reaper Squad Gaming y forma parte de una familia de jugadores apasionados!</p>
+
+            <!-- Cierre de seccion unirte -->    
+            </section>
+
+            <!-- Agrupo la seccion de contacto con el atributo id asignandolo como identificador unico del elemento contacto -->
+            <section id="contacto">
+
+                <!-- Creo con <h5> encabezado de jerarquia de nivel 5, implementando tambien el atributo class para aplicar estilos y elementos especificos 
+                    desde CSS y Javascript -->
+                <h5 class="titulo5">Contacto</h5>
+
+                <!-- Con <div> creo un contenedor generico para el formulario de contacto, utilizando el atributo class para aplicar estilos y elementos 
+                    especificos desde CSS y Javascript-->
+                <div class="formulario">
+
+                    <!-- Utilizo la etiqueta <from> para crear un formulario con el identificador especifico id y el atributo onsubmit
+                        el cual estoy utilizando para especificar la funcion que se ejecutara cuando el formulario se envie.
+                        enviarDatos es la funcion que utilizo en el archivo script.js para procesar y manejar los datos del formulario antes de que se envien 
+                        al servidor. El parametro event en la funcion se refiere al objeto de evento que contiene la informacion sobre el evento, este 
+                        permite capturar y procesar los datos. -->
+                    <form id="formularioContacto" onsubmit="enviarDatos(event)">
+                        
+                        <!-- Con la etiqueta <label> creo una etiqueta descriptiva que asocio al elemento "nombre" dentro del formulario
+                            como campo de entrada, dandole una descripcion legible del elemento para mejorar la accesibildad y utilidad del formulario,
+                            implemento el atributo for para asociar la etiqueta y el elemento especifico id. -->
+                        <label for="nombre">Nombre:</label>
+
+                        <!-- Creo con la etiqueta <input> un campo de entrada de texto en el formulario, permitiendo que el usuario pueda ingresar texto,
+                            el atributo type lo utilizo para especificar el tipo de entrada que se creara en este caso "texto" el atributo id permite la manipulacion del campo mediante Jvascript y CSS y el atributo required asegura que el formulario sea 
+                            llenado antes de ser enviado con los campos vacios.-->
+                        <input type="text" id="nombre" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                        <label for="mensaje">Mensaje:</label>
+
+                        <!-- Utilizo <textare> para crear un campo de ntrada de texto que permite que los usuarios puedan ingresar varias lineas de texto, implementando id para manipular
+                            el area de texto mediante Javascript y CSS, y el atributo required asegurando que el campo sea llenado antes de que se envie el formulario. -->
+                        <textarea id="mensaje" required></textarea>
+
+                        <!-- <button> crea un boton interactivo dentro de la pagina para el envio del formulario, con el atributo
+                            type especifico el tipo de boton que se creara en este caso lo establesco como "submit" lo que significa que el boton 
+                            actuara como envio de formulario. "Enviar" es el texto dentro del boton el cual se vera en la pagina como texto visible. -->
+                        <button type="submit">Enviar</button>
+
+                    <!-- Cierre del formulario -->    
+                    </form>
+                    <!-- Este contenedor contiene un boton para suscribirse a las novedades de la pagina -->
+                    <div class="subscription-container">
+                        <h6 class="novedades">¿Deseas recibir nuestras novedades?</h6>
+                        <button id="subscribe-button">Sí, quiero</button>
+                    </div>
+                <!-- Cierre del contenedor -->    
+                </div>  
+
+            <!-- Cierre de la seccion contacto -->    
+            </section> 
+            
+        <!-- Cierre de la seccion central y principal de la pagina -->    
+        </main>
+
+        <!-- Esta etiqueta <footer> crea y estructura la seccion del pie de pagina, consume un lugae especifico
+            el cual contiene en este caso informacion relevante realcionada copyright con creditos de autor y 
+            enlaces del portfolio del autor en este caso. utilizando la etiqueta <img> para insertar imagen
+             con el atributo src defino la fuente externa que se debe cargar y mostrar en el elemento HTML. -->
+        <footer>
+            <img src="Imagenes/6-logo-negro.png">
+
+            <!-- Utilizo la etiqueta <p> para crear un parrafo y el atributo class, utilizo &copy para mostrar 
+                el simbolo de copyright en el contenido de la pagina (el cual se puede copiar desde la pagina de 
+                copyright y pegar en HTML)) -->
+            <p class="copyright">&copy Copyright Daniela Delgado - 2023</p>
+
+            <!-- <a> crea un enlace (hipervinculo) que dirige a una pagina web externa en este caso "linkedin",
+                le asigno una clase con el atributo class="textoLink", especifico con el atributo href la 
+                direccion URL y con el atributo target indico como se abre el enlace, en este caso lo establesco 
+                como "_blanck" lo que hace que el enlace se abr en una ventana o pestaña mueva del navegador.-->
+            <a class="textoLink" href="https://www.linkedin.com/in/daniela-delgado-384896274/" target="_blank">Linkedin</a>
+            <!-- IDEM anterior -->
+            <a class="textoLink" href="https://github.com/silvia-daniela-delgado" target="_blank">GitHub</a>
+
+        <!-- Cierre del pie de pagina -->    
+        </footer>
+        
+        <!-- La siguiente linea carga y ejecuta el archivo script externo indicando la ruta de acceso que es la
+            carpeta Script y el archivo script.js que contiene el codigo Javascript que se ejecutara en la pagina
+        las funciones dinamicas en el lado del usuario. -->
+        <script src="Script/script.js"></script>
+
+    <!-- Cierre del area principal de la pagina -->    
+    </body>
+
+<!-- Cierre del archivo HTML -->    
+</html>

@@ -1,0 +1,265 @@
+/* Definición de estilos para el cuerpo de la página */
+body{ /* Llamado a la etiqueta body */
+    font-family: 'Exo 2', sans-serif; /* Es una propiedad que define la familia de fuentes de texto que se utilizara en el cuerpo de la página */
+    background-image: url(../Imagenes/background-1939128_1280.webp); /* Propiedad que establece la imagen de fondo de la página y url es la ruta relativa o absoluta de la imagen */
+    margin: 0; /* Esta propiedad se utilza para controlar el espacio del elemento HTML y los elementos circundantes puede aceptar 1, 2, 3, o 4 valores dependiendo de como quieras configurar los margenes de cada elemento */
+    padding: 20px; /* Agregamos un espacio interno alrededor del contenido */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+    max-width: 1000px; /* Establece un ancho máximo para el contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+/* Estilos para el contenedor principal */
+/* Estilos para la caja que contiene el contenido */
+.caja {
+    text-align: center; /* Esta propiedad controla la alineacion horizontal del texto dentro de un elemento HTML. Determina como se posiciona el contenido de texto dentro del elemento en relacion con su contenedor, en este caso centra el contenido del contenedor */
+    padding: 20px; /* Agrega espacio interno al contenedor para que no esté demasiado ajustado */
+}
+/* Estilos para secciones principales */
+.principal {
+    padding: 1em 0; /* Agrega espacio interno en la parte superior e inferior del contenedor */
+    max-width: 940px; /* Se utiliza para establecer el ancho máximo que puede tener un elemento HTML. Esta propiedad limita el ancho del elemento, asegurando que no crezca más allá del valor especificado, incluso si el contenido dentro del elemento podría ocupar más espacio. Hace que los diseños sean mas responsivos y se ajusten a diferentes tipos de pantallas*/
+    margin: 0 auto; /* Centra el contenedor horizontalmente en la página */
+}
+
+/* Estilos para el título principal */
+.titulo-principal {
+    font-size: 3em; /* Define el tamaño de fuente del título principal */
+    margin: 20px 0; /* Establece márgenes superior e inferior para el título */
+    color: #f23f26; /* Cambia el color del texto a un tono de rojo */
+}
+
+/* Estilos para la imagen en la sección home */
+#home img {
+    max-width: 100%; /* Garantiza que la imagen no sea más ancha que su contenedor */
+    width: 500px; /* Establece un ancho específico para la imagen */
+    height: auto; /* Esta propiedad establece el alto de la imagen, puede aceptar valores numericos seguidos de unidades de medida como px, %, em, etc, tambien se puede estableceer con valores especiales como auto permitiendo que la imagen  se ajuste automaticamente en altura a su contenido */
+    margin-top: 5px; /* Establece el margen superior del elemento HTML. Puede aceptar valores numericos seguido de unidades de medida como px, %, em, etc tambien valores especiales como auto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave a la imagen creando efecto visual para que el elemento parezca estar elevado o flotando sobre la pagina dando profundidad y dimension al diseño */
+    transition: transform 0.2s, box-shadow 0.2s, filter 0.2s; /* Establece las transiciones suaves para transformación, sombra y filtro, especifica como debe cambiar una propiedad de estilo por ejemplo cuando el cursor pasa sobre el elemento */
+}
+
+#home img::before {
+    content: ""; /* Esta propiedad inserta contenido antes de la imagen (utilizado para el efecto de fondo) */
+    position: absolute; /* Se utiliza para controlar como se posiciona un elemento HTML, puede tener varios valores como stactic, relative, absolute, fixed, sticky. en este caso posiciona el contenido de manera absoluta con respecto al contenedor */
+    top: 0; /* Controla la posicion vertical del elemento y se utiliza en combinacion con la propiedad "position", en este caso ubica el contenido en la parte superior del contenedor */
+    left: 0; /* Se utiliza en combinación con la propiedad position para controlar la posición horizontal de un elemento en relación con su contenedor */
+    width: 100%; /* Esta propiedad controla la dimension horizontal y define que tan ancho sera visulamente n la pagina en este caso establece el ancho del contenido al 100% del contenedor */
+    height: 100%; /* Establece la altura del contenido al 100% del contenedor */
+    background: rgba(0, 0, 0, 0.05); /* Aplica estilos relacionados al fondo del elemnto HTML. Puede incluir varios subvalores separados por guiones y definen varios aspectos del fondo los mas comunes son: "background-color", "background-image", "background-repeat", "background-position", "background-size","background-attachment", en este caso define un color de fondo semitransparente para el efecto */
+    z-index: -1; /* Controla el apilamiento de elementos posicionados, determina el orden en el que los elementos se superponen entre si en el eje z(profundidad) en este caso coloca el contenido detrás de la imagen */
+}
+
+#home img:hover {
+    transform: scale(1.1); /* Se usa para aplicar transformaciones visuales al elemento HTML, como "rotate", "scale", "traslate", "skew" y "matrix", en este caso aplica un aumento de escala en la imagen al pasar el cursor sobre ella */
+    box-shadow: 0 8px 16px rgba(250, 249, 249, 0.986); /* Cambia la sombra al pasar el cursor */
+    filter: brightness(90%); /* Se utiliza para aplicar efectos visuales, en este caso ajusta el brillo de la imagen al pasar el cursor */
+}
+
+
+/* Estilos para títulos secundarios */
+.titulo2{
+    text-align: center; /* Centra el texto del título horizontalmente */
+    font-size: 2em; /* Tamaño de fuente del título */
+    margin: 1em; /* Márgenes del título */
+    clear:left; /* Limpia el flujo de elementos flotantes a la izquierda */
+    color: #f23f26;  /* Color del texto */
+}
+/* Estilos para párrafos dentro de secciones principales */
+.principal p{
+    margin: 1 0 1em; /* Márgenes del párrafo (superior, derecho, inferior) */
+    font-size: large; /* Tamaño de fuente del párrafo */
+    color:  #f3e4ca; /* Color del texto */
+}
+/* Estilos para elementos de texto fuerte (negrita) */
+.principal strong{
+    font-weight: bold; /* Se utiliza para controlar el grosor de una fuente tipografica de un elemento HTML que contiene el texto permite ajustar la apariencia visual en este caso aplica negrita al texto fuerte */
+}
+/* Estilos para elementos de texto en cursiva */
+.principal em{
+    font-style: italic; /* Aplica estilo en cursiva al texto en cursiva */ 
+}
+/* Estilos para la imagen con clase "Gaming" */
+/* Estilos para la imagen con clase "Gaming" */
+.Gaming {
+    width: calc(40% - (26px * 4)); /* Calcula el ancho de la imagen */
+    float: left; /* Flota la imagen a la izquierda */
+    margin: 0 20px 20px 0; /* Márgenes de la imagen */
+    position: relative; /* Establece el contexto de apilamiento */
+    z-index: 0; /* Asegura que la imagen esté por encima del sombreado */
+
+    /* Efecto de sombreado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra suave */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transiciones suaves */
+}
+
+.Gaming::before {
+    content: ""; /* Agrega contenido antes de la imagen */
+    position: absolute; /* Posiciona el contenido de manera absoluta */
+    top: 0; /* Posiciona en la parte superior */
+    left: 0; /* Posiciona en la parte izquierda */
+    width: 100%; /* Ancho del contenido al 100% */
+    height: 100%; /* Altura del contenido al 100% */
+    background: rgba(0, 0, 0, 0.05); /* Color de fondo semitransparente */
+    z-index: -1; /* Coloca el sombreado detrás de la imagen */
+}
+
+.Gaming:hover {
+    transform: scale(1.1); /* Escala la imagen al pasar el cursor sobre ella */
+    box-shadow: 0 8px 16px rgba(248, 247, 247, 0.938); /* Cambia la sombra al pasar el cursor */
+}
+
+/* Estilos para el título de nivel 3 con clase "titulo3" */
+.titulo3{
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 2em;  /* Tamaño de fuente 2em */
+    margin: 0 0 1em;  /* Márgenes (superior, derecho, inferior) */
+    clear:left;  /* Limpia el flujo de elementos flotantes a la izquierda */
+    color: #f23f26;  /* Color del texto */
+}
+
+/* Estilos para párrafos dentro de la clase "ofrecimiento" */
+.ofrecimiento p{
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 1 1 1em; /* Márgenes (superior, derecho, inferior) */
+    font-size: large; /* Tamaño de fuente grande */
+    clear: right; /* Limpia el flujo de elementos flotantes a la derecha */
+    color:  #f3e4ca;  /* Color del texto */
+}
+
+/* Estilos para elementos de texto fuerte dentro de la clase "ofrecimiento" */
+.ofrecimiento strong{
+    font-weight: bold; /* Aplica negrita al texto fuerte */   
+}
+
+/* Estilos para el título de nivel 4 con clase "titulo4" */
+.titulo4{
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 2em; /* Tamaño de fuente 2em */
+    margin: 0 0 1em; /* Márgenes (superior, derecho, inferior) */
+    clear:left; /* Limpia el flujo de elementos flotantes a la izquierda */
+    color: #f23f26; /* Color del texto */
+}
+
+/* Estilos para párrafos dentro de la clase "unirte" */
+.unirte p{
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 1 0 1em; /* Márgenes (superior, derecho, inferior) */
+    font-size: large; /* Tamaño de fuente grande */
+    /* background-size: #f3e4ca; */ /* Configuración incorrecta de background-size */
+    clear: right; /* Limpia el flujo de elementos flotantes a la derecha */
+    color:  #f3e4ca; /* Color del texto */
+}
+
+/* Estilos para elementos de texto fuerte dentro de la clase "unirte" */
+.unirte strong{
+    font-weight: bold;  /* Aplica negrita al texto fuerte */  
+}
+
+/* Estilos para el título de nivel 5 con clase "titulo5" */
+.titulo5{
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 2em; /* Tamaño de fuente 2em */
+    margin: 0 0 1em; /* Márgenes (superior, derecho, inferior) */
+    clear:left;  /* Limpia el flujo de elementos flotantes a la izquierda */
+    color: #f23f26; /* Color del texto */
+}
+
+/* Estilos para elementos con clase "items" */
+.items{
+    font-style: italic; /* Aplica estilo en cursiva */
+}
+
+/* Estilos para la lista no ordenada (ul) */
+ul {
+    display: inline-block; /* Muestra la lista en línea y como bloque */
+    vertical-align: top;  /* Alinea la lista en la parte superior */
+    width: auto; /* Ancho automático */
+    margin-left: 15%; /* Márgenes del lado izquierdo de la lista */
+    color: #e43f25; /* Color del texto de la lista */
+}
+
+/* Estilos para el encabezado (header) */
+header {
+    background-color: #48332b; /* Color de fondo del encabezado */
+    padding: 10px; /* Espaciado interno del encabezado */
+}
+
+/* Estilos para la lista no ordenada dentro de la navegación */
+nav ul {
+    list-style-type: none; /* Quita los marcadores de lista (viñetas) */
+    margin: 0; /* Elimina el margen externo */
+    padding: 0;  /* Elimina el relleno interno */
+}
+
+/* Estilos para enlaces dentro de la barra de navegación */
+nav ul li a {
+    color:  #e43f25; /* Color del texto del enlace */
+    text-decoration: none; /* Quita la decoración de subrayado del enlace */
+    padding: 10px; /* Espaciado interno del enlace */
+}
+
+/* Estilos para el formulario de contacto */
+.formulario {
+    max-width: 940px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    padding: 50px; /* Espaciado interno del formulario */
+    color: #f3e4ca; /* Color del texto dentro del formulario */
+    text-align: center; /* Centra el contenido del formulario horizontalmente */
+}
+
+/* Resto de estilos para la clase "formulario" */
+
+/* Estilos adicionales para la clase "formulario" */
+.formulario {
+    margin: 40px auto; /* Centra el formulario vertical y horizontalmente */
+    padding: 20px; /* Espaciado interno del formulario */
+    border: 1px solid #48332b; /* Borde alrededor del formulario */
+}
+
+/* Estilos para las etiquetas, campos de entrada y botones dentro de la clase "formulario" */
+.formulario label,
+.formulario input,
+.formulario button {
+    margin: 10px 0; /* Reducimos el espacio entre elementos */
+}
+
+/* Estilos para el contenedor de suscripción */
+.subscription-container {
+    padding: 10px; /* Espaciado interno del contenedor */
+    border-radius: 5px; /* Borde redondeado del contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave del contenedor */
+    text-align: center; /* Centra el contenido del contenedor horizontalmente */
+}
+/*Estilo para el contenedor de novedades*/
+.novedades{
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 1em; /* Tamaño de fuente 1em */
+    margin: 0 0 1em; /* Márgenes (superior, derecho, inferior) */
+    clear:left;  /* Limpia el flujo de elementos flotantes a la izquierda */
+    color: #f23f26; /* Color del texto */
+}
+
+/* Estilos para el botón */
+button {
+    padding: 10px 20px; /* Espaciado interno del botón (arriba y abajo, izquierda y derecha) */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Quita el borde del botón */
+    border-radius: 5px; /* Borde redondeado del botón */
+    cursor: pointer; /* Cambia el cursor a una mano cuando pasa sobre el botón */
+    transition: transform 0.2s; /* Agregamos una transición suave a la propiedad transform */
+}
+
+/* Cuando el cursor está sobre el botón */
+button:hover {
+    transform: scale(1.1); /* Escalamos el botón al 110% cuando el cursor está sobre él */
+    background-color: #0056b3; /* Cambia el color de fondo cuando el cursor está sobre él */
+}
+
+/* Estilos para el pie de página con clase "footer" */
+footer{
+    text-align: center; /* Centra el texto horizontalmente */
+    color: #f3e4ca; /* Color de texto */
+    background: url(bg.jpg); /* Imagen de fondo */
+    padding: 20px; /* Relleno interno del pie de página */
+}
